@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+ <html lang="en"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>undefined | Redux Components</title><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.5em georgia,serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.8);font-family:georgia,serif;font-weight:normal;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.5rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.5rem;color:inherit;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-weight:bold;text-rendering:optimizeLegibility;font-size:1.618rem;line-height:2.25rem;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.5rem;color:inherit;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-weight:bold;text-rendering:optimizeLegibility;font-size:1.33471rem;line-height:2.25rem;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.5rem;color:inherit;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-weight:bold;text-rendering:optimizeLegibility;font-size:1.21225rem;line-height:1.5rem;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.5rem;color:inherit;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-weight:bold;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.5rem;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.5rem;color:inherit;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-weight:bold;text-rendering:optimizeLegibility;font-size:0.90825rem;line-height:1.5rem;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.5rem;color:inherit;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-weight:bold;text-rendering:optimizeLegibility;font-size:0.86558rem;line-height:1.5rem;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.5rem;}ul{margin-left:1.5rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.5rem;list-style-position:outside;list-style-image:none;}ol{margin-left:1.5rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.5rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.5rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.5rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.5rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.5rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.5rem;font-size:0.85rem;line-height:1.42;background:hsla(0,0%,0%,0.04);border-radius:3px;overflow:auto;word-wrap:normal;padding:1.5rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.5rem;font-size:1rem;line-height:1.5rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.5rem;}blockquote{margin-left:1.5rem;margin-right:1.5rem;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.5rem;}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.5rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.5rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.5rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.5rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.5rem;}b{font-weight:bold;}strong{font-weight:bold;}dt{font-weight:bold;}th{font-weight:bold;}li{margin-bottom:calc(1.5rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.5rem;margin-bottom:calc(1.5rem / 2);margin-top:calc(1.5rem / 2);}li > ul{margin-left:1.5rem;margin-bottom:calc(1.5rem / 2);margin-top:calc(1.5rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.5rem / 2);}code{font-size:0.85rem;line-height:1.5rem;}kbd{font-size:0.85rem;line-height:1.5rem;}samp{font-size:0.85rem;line-height:1.5rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:tnum;-moz-font-feature-settings:tnum;-ms-font-feature-settings:tnum;-webkit-font-feature-settings:tnum;padding-left:1rem;padding-right:1rem;padding-top:0.75rem;padding-bottom:calc(0.75rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}tt,code{background-color:hsla(0,0%,0%,0.04);border-radius:3px;font-family:"SFMono-Regular", Consolas,"Roboto Mono","Droid Sans Mono","Liberation Mono",Menlo,Courier,monospace;padding:0;padding-top:0.2em;padding-bottom:0.2em;}pre code{background:none;line-height:1.42;}code:before,code:after,tt:before,tt:after{letter-spacing:-0.2em;content:" ";}pre code:before,pre code:after,pre tt:before,pre tt:after{content:"";}</style><style>.text-center{text-align:center}.hljs-comment,.hljs-quote{color:#998;font-style:italic}.hljs-keyword,.hljs-selector-tag,.hljs-subst{color:#333;font-weight:700}.hljs-literal,.hljs-number,.hljs-tag .hljs-attr,.hljs-template-variable,.hljs-variable{color:teal}.hljs-doctag,.hljs-string{color:#d14}.hljs-section,.hljs-selector-id,.hljs-title{color:#900;font-weight:700}.hljs-subst{font-weight:400}.hljs-class .hljs-title,.hljs-type{color:#458;font-weight:700}.hljs-attribute,.hljs-name,.hljs-tag{color:navy;font-weight:400}.hljs-link,.hljs-regexp{color:#009926}.hljs-bullet,.hljs-symbol{color:#990073}.hljs-built_in,.hljs-builtin-name{color:#0086b3}.hljs-meta{color:#999;font-weight:700}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}</style><style>
+                  a {
+                    color: rgb(17,17,85);
+                  }
+                  blockquote {
+                    padding: 0 15px;
+                    color: #777;
+                    border-left: 4px solid #ddd;
+                  }
+                </style></head><body><div id="react-mount"><div data-reactroot="" data-reactid="1" data-react-checksum="458279323"><div style="background:rgb(17,17,85);color:rgb(144,144,176);margin-bottom:2.25rem;" data-reactid="2"><div style="max-width:960px;margin-left:auto;margin-right:auto;padding-left:1.125rem;" data-reactid="3"><div style="padding:1.125rem 0;" data-reactid="4"><div style="float:left;margin-left:0%;margin-right:1.694915254237288%;width:32.20338983050847%;clear:none;height:24px;" data-reactid="5"><a style="text-decoration:none;color:rgb(144,144,176);font-size:1.59375rem;" href="/" data-reactid="6">Redux Components</a><span style="display:block;clear:both;" data-reactid="7"> </span></div><div style="float:right;margin-left:0%;margin-right:0%;width:66.10169491525423%;clear:none;" data-reactid="8"><a style="float:right;color:rgb(144,144,176);text-decoration:none;margin-left:0.75rem;" target="_blank" href="https://github.com/wcjohnson/redux-components" data-reactid="9">Github</a><a style="background:rgb(0,0,62);color:rgb(153,153,178);float:right;text-decoration:none;padding-left:0.75rem;padding-right:0.75rem;padding-bottom:1.125rem;margin-bottom:-1.5rem;padding-top:1.5rem;margin-top:-1.5rem;" href="/docs/" data-reactid="10">Documentation</a><span style="display:block;clear:both;" data-reactid="11"> </span></div><span style="display:block;clear:both;" data-reactid="12"> </span></div><span style="display:block;clear:both;" data-reactid="13"> </span></div></div><div style="max-width:960px;margin-left:auto;margin-right:auto;padding:1.5rem 1.125rem;padding-top:0;" data-reactid="14"><div class="markdown" data-reactid="15"><h1 data-reactid="16"></h1><div data-reactid="17"><h2>TOC</h2>
+<h2>Before We Begin</h2>
+<h3>Redux</h3>
+<p>redux-components is a library that aims to improve implementation, readability, and code reuse for state models based on <a href="http://redux.js.org">Redux</a>. We assume that if you’re here, you’re using Redux and are familiar with all the core concepts described in <a href="http://redux.js.org">its documentation</a>. If not, read that first.</p>
+<h3>A Note on Example Code</h3>
+<p>Example code in this document is written in ES2015+ syntax. In particular, you will need <code>babel-plugin-transform-class-properties</code> and <code>babel-plugin-transform-decorators-legacy</code> to compile the examples as written.</p>
+<p>If you can’t (or won’t) use futuristic code transforms, check out the FAQ entry: <a href="#faq">I Don’t Have Decorators</a></p>
+<h2>Components</h2>
+<p>The fundamental building block of <code>redux-components</code> is the Redux component, which is an instance of any class that derives from the base class <code>ReduxComponent</code> – analogous to the React class <code>React.Component</code>.</p>
+<h3>What’s in a Component?</h3>
+<p>Let’s break down a Redux component and see what it’s made of. Our case study is the <code>SimpleComponent</code>: a piece of state that stores and retrieves an opaque, raw value. <code>SimpleComponent</code>'s class looks like this:</p>
+<pre><code class="language-javascript"><span class="hljs-keyword">import</span> { ReduxComponent, action, selector } <span class="hljs-keyword">from</span> <span class="hljs-string">'redux-components'</span>
+
+<span class="hljs-keyword">export</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SimpleComponent</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">ReduxComponent</span> </span>{
+  <span class="hljs-keyword">static</span> verbs = [<span class="hljs-string">'SET'</span>]
+
+  reducer(state = <span class="hljs-literal">null</span>, action) {
+    <span class="hljs-keyword">switch</span>(action.type) {
+      <span class="hljs-keyword">case</span> <span class="hljs-keyword">this</span>.SET:
+        <span class="hljs-keyword">return</span> (action.payload === <span class="hljs-literal">undefined</span>) ? <span class="hljs-literal">null</span> : action.payload
+
+      <span class="hljs-keyword">default</span>:
+        <span class="hljs-keyword">return</span> state
+    }
+  }
+
+  @action({<span class="hljs-attr">isDispatcher</span>: <span class="hljs-literal">true</span>})
+  set(value) {
+    <span class="hljs-keyword">return</span> { <span class="hljs-attr">type</span>: <span class="hljs-keyword">this</span>.SET, <span class="hljs-attr">payload</span>: value }
+  }
+
+  @selector({<span class="hljs-attr">isObservable</span>: <span class="hljs-literal">true</span>})
+  get(state) {
+    <span class="hljs-keyword">return</span> state
+  }
+}
+</code></pre>
+<p>As you can see, our <code>SimpleComponent</code> consists of four fundamental parts: <strong>verbs</strong>, a <strong>reducer</strong>, an <strong>action</strong>, and a <strong>selector</strong>. Let’s go over each of these in turn.</p>
+<h4>Verbs</h4>
+<p>You’ll know from the Redux documentation that your application state is manipulated only by actions, and that every action is identified by a string <code>type</code>.</p>
+<p>Well, verbs are the strings that serve as the <code>type</code>s of actions. Think of them as what the reducer looks at when it decides what to do. In baseline Redux, verbs are just plain strings – but in redux-components they have some additional “magic” behavior designed to help you reuse components more easily, which we will explain later. For now, just think of them as names for the things you want your reducer to do.</p>
+<p>As you can see, our <code>SimpleComponent</code> does only one thing: <code>SET</code>.</p>
+<h4>Reducer</h4>
+<p>Reducers are a fundamental part of Redux covered very well in the Redux docs, so I won’t belabor matters by repeating the basics. However, there are a few important things about reducers that are specific to redux-components:</p>
+<ul>
+<li>
+<p>Reducers are automatically bound to their component instance by the redux-components framework. This means you don’t have to worry about binding them when you hand them off to Redux or other code. They will always be called in the context of their owning instance.</p>
+</li>
+<li>
+<p>Because they are bound, they have access to the verbs of their component instance. So instead of writing a plain string for a verb, you should write <code>this.VERB</code>. This will ensure your reducer responds to scoped actions, which have to do with the “magic” verb behavior I referred to earlier. (Don’t worry, we’ll get to that shortly.)</p>
+</li>
+<li>
+<p>Again because they are bound, it can be tempting to introduce impure behavior in your reducer, say by calling a method on <code>this</code>, or storing some data on <code>this.someKey</code>. <em>Do not be tempted to do this!</em> If you do, you will break the Redux contract and lose a lot of the advantages that Redux gives you. The basic rule of reducers in redux-components is the same as in Redux: <strong>reducers should be pure functions of state and action!</strong></p>
+</li>
+</ul>
+<blockquote>
+<p>Verbs are a special exception; they are constant throughout the life of a component and therefore safe to access from the reducer.</p>
+</blockquote>
+<ul>
+<li>redux-components expects reducers to obey the Redux contract in all respects. In particular, you should make sure your reducer only returns an identical (<code>===</code>) state when nothing in the state has changed.</li>
+</ul>
+<p>Our <code>SimpleComponent</code> has an appropriately simple reducer: when it hears the action named <code>this.SET</code>, it changes the state to the attached <code>payload</code>. It ignores all other actions.</p>
+<h4>Actions</h4>
+<p>Redux actions are plain objects with a string <code>type</code> key, used by reducers to transform state. They are created by “action creators” and then dispatched to the Redux store using <code>store.dispatch()</code>. redux-components adds some magic around the Redux action model to make them easier to use.</p>
+<p>An action is a method on your component class with the <strong><code>@action</code> decorator</strong> applied to it. This decorator tells redux-components that you want your method to be an action, and applies the appropriate properties to it. All actions are bound to the component instance, just like reducers.</p>
+<p>By default, adding <code>@action()</code> to a method makes a plain Redux action creator. However, in this particular case, by passing <code>{isDispatcher: true}</code> to the <code>@action</code> decorator we are making our action a <strong>dispatcher</strong>. Dispatchers are automatically wrapped in a <code>store.dispatch()</code> call, so that there is no need for you to call dispatch yourself.</p>
+<p>So in the case of our <code>SimpleComponent</code>, whenever we call <code>component.set(value)</code>, an action will automatically be dispatched to the containing store of the type <code>component:SET</code> and the given value. This will have the semantic effect of setting our component’s value, so the code reads as what it does.</p>
+<h4>Selectors</h4>
+<p>A <strong>selector</strong>, described in the Redux docs under <a href="http://redux.js.org/docs/recipes/ComputingDerivedData.html">Computing Derived Data</a>, is a pure function that takes the state of the Redux store and returns some portion of interest, possibly transforming it somehow along the way. Think of selectors as the vehicles that let you get exactly what you want out of your Redux store.</p>
+<p>Selectors in redux-components are methods on component classes with the <strong><code>@selector</code> decorator</strong> applied to them. Redux-components adds some magic to selectors to make them better. In particular, selectors in redux-components are <strong>scoped</strong> by default – instead of receiving the state of the whole Redux store, they receive the state of the component instance they are attached to. This makes it easy to write components that don’t depend on the state shape of the application they are used in. Selectors are also bound to the instance and so have access to all the instance’s properties.</p>
+<p>Our <code>SimpleComponent</code> has a selector <code>component.get()</code>, which will simply return the state of the component, which is the last value set with <code>component.set(value)</code> or null.</p>
+<blockquote>
+<p>You may have noticed the <code>{isObservable: true}</code> modifier attached to the selector. Don’t worry, we’ll explain what that does later, in [Observable Selectors].</p>
+</blockquote>
+<h3>Connecting to a Store</h3>
+<p>Okay, we’ve made a Redux component. How do we use it?</p>
+<p>First we should note that what we made was a <em>class</em> of Redux components. Only <em>instances</em> can actually be used. We get an instance in the usual way: by calling <code>new SimpleComponent()</code>. First we create an instance, then we use that instance by <strong>mounting</strong> it to a store:</p>
+<pre><code class="language-javascript"><span class="hljs-keyword">import</span> { createStore } <span class="hljs-keyword">from</span> <span class="hljs-string">'redux'</span>
+<span class="hljs-keyword">import</span> { mountRootComponent } <span class="hljs-keyword">from</span> <span class="hljs-string">'redux-components'</span>
+<span class="hljs-keyword">import</span> { SimpleComponent } <span class="hljs-keyword">from</span> <span class="hljs-string">'SimpleComponent'</span>
+
+<span class="hljs-comment">// Create an instance of our SimpleComponent</span>
+<span class="hljs-keyword">var</span> simpleComponentInstance = <span class="hljs-keyword">new</span> SimpleComponent()
+<span class="hljs-comment">// Create a store with the identity function for a reducer</span>
+<span class="hljs-keyword">var</span> store = createStore( <span class="hljs-function"><span class="hljs-params">x</span> =&gt;</span> x )
+<span class="hljs-comment">// Mount our component on the store. This automatically replaces the store's</span>
+<span class="hljs-comment">// reducer using .replaceReducer</span>
+mountRootComponent(store, simpleComponentInstance)
+
+<span class="hljs-comment">// Now we can use our component!</span>
+simpleComponentInstance.set(<span class="hljs-string">'hello world'</span>)
+assert(simpleComponentInstance.get() === <span class="hljs-string">'hello world'</span>)
+</code></pre>
+<h3>Component Lifecycle</h3>
+<p>By analogy with React, Redux component instances have a <strong>lifecycle</strong>. The lifecycle has four phases, corresponding to four <strong>lifecycle methods</strong> that will be called on the component during that phase of the lifecycle. All of these methods are optional.</p>
+<h4>constructor</h4>
+<p>As a regular JS object, your component’s <code>constructor</code> will be called when an instance is created.</p>
+<blockquote>
+<p>Note that redux-components that define a constructor must <strong>always</strong> call the <code>super()</code> constructor. If you don’t, your component will not function properly!</p>
+</blockquote>
+<h4>componentWillMount</h4>
+<p><code>component.componentWillMount()</code> is called when your component is about to be mounted to a store. At this time, the <code>this.store</code> object is available and the <code>this.state</code> field will contain your component’s initial state, if any.</p>
+<p>At this time, your component’s reducer <em>has not</em> been attached to the store, so any actions you dispatch from here <em>will not</em> be seen by your reducer.</p>
+<h4>componentDidMount</h4>
+<p><code>component.componentDidMount()</code> is called <em>after</em> your component’s reducer has been attached to a store. At this time, your reducer will see any action that you dispatch and your state will change accordingly.</p>
+<blockquote>
+<p>If you’re wondering where to put your state initialization code, <code>componentDidMount</code> is usually the right place. You will probably want to dispatch actions that change your state’s value, which won’t work in <code>componentWillMount</code>.</p>
+</blockquote>
+<h4>componentWillUnmount</h4>
+<p><code>component.componentWillUnmount()</code> is called when your component is about to be unmounted from the store. At this time, your component is still mounted, so any <em>synchronous</em> actions will be seen by your reducer.</p>
+<h2>Trees</h2>
+<p>Sooner or later, you will want to put multiple components together to form a composite application. In Redux, the primary manifestation of this pattern is the <strong>state tree</strong>, which is put together using Redux’s <code>combineReducers()</code> function.</p>
+<p>In redux-components, we provide similar methods to build composite components out of smaller ones.</p>
+<h3>createComponent</h3>
+<p>The easiest way to create a tree in redux-components is via the <code>createComponent</code> API, which allows you to quickly and legibly compose many components into any shape:</p>
+<pre><code class="language-javascript"><span class="hljs-keyword">import</span> { createComponent } <span class="hljs-keyword">from</span> <span class="hljs-string">'redux-components'</span>
+<span class="hljs-keyword">import</span> { SimpleComponent } <span class="hljs-keyword">from</span> <span class="hljs-string">'SimpleComponent'</span>
+
+<span class="hljs-keyword">var</span> tree = createComponent({
+  <span class="hljs-attr">a</span>: <span class="hljs-keyword">new</span> SimpleComponent(),
+  <span class="hljs-attr">b</span>: SimpleComponent,
+  <span class="hljs-attr">deep</span>: {
+    <span class="hljs-attr">deeper</span>: {
+      <span class="hljs-attr">c</span>: <span class="hljs-function">(<span class="hljs-params">state = <span class="hljs-literal">null</span>, action</span>) =&gt;</span> action.payload || state,
+      <span class="hljs-attr">d</span>: SimpleComponent
+    }
+  }
+})
+</code></pre>
+<p><code>createComponent</code>, when given an object literal, creates an instance of a component tree with the components you specify attached at each corresponding node. In fact, this bears a little further explanation, so let’s go into detail. <code>createComponent(descriptor)</code> takes a <strong>component descriptor</strong> as an argument, which can be one of four types:</p>
+<ul>
+<li>
+<p><strong>Component instance:</strong> In this case, since <code>instance</code> is already a component, <code>createComponent(instance)</code> is just <code>instance</code>. In the above example, <code>tree.a</code> is a component instance descriptor.</p>
+</li>
+<li>
+<p><strong>Component class:</strong> In this case, <code>new Class()</code> is immediately called to create an instance. In the above example, <code>tree.b</code> is a component class descriptor.</p>
+</li>
+<li>
+<p><strong>Plain reducer:</strong> You may provide a reducer function as a component descriptor, in which case the reducer is automatically lifted to a full-fledged component instance. Using plain reducers, you can attach other code from the Redux ecosystem, or code you have not yet ported to redux-components. In the above example, <code>tree.deep.deeper.c</code> uses a plain reducer descriptor.</p>
+</li>
+<li>
+<p><strong>Object literal:</strong> You may pass an object as a component descriptor, in which case the object will be swept up into a tree, with <code>createComponent()</code> being called recursively on each node. Provide a component descriptor at each node (including deeper levels of nesting) and <code>createComponent</code> will automatically create the corresponding component tree.</p>
+</li>
+</ul>
+<p>When you create a tree with <code>createComponent</code>, the components are accessible via object properties at their corresponding position in the tree. For instance, <code>tree.deep.deeper.d</code> is an instance of <code>SimpleComponent</code></p>
+<h3>Scoping</h3>
+<p>Remember the discussion about verbs and the “magic” behavior that I said I’d explain later? Well, now that you know about trees, it’s time to clear all that up. Redux components are designed around the idea of <strong>scoping</strong>, which means following these rules to the greatest extent possible:</p>
+<ol>
+<li>
+<p><strong>Components should be isolable:</strong> A component should care about its own state and the state of its children, not about the state at other nodes of the tree, nor about its specific position.</p>
+</li>
+<li>
+<p><strong>Components should be reusable:</strong> A component should be able to attach at multiple nodes in a tree, or move across different applications when appropriate.</p>
+</li>
+<li>
+<p><strong>Components should be refactorable:</strong> You should be able to split a component into child components, meld separate components, and move components around your state tree without breakage, so long as you expose a consistent API.</p>
+</li>
+</ol>
+<h4>Path-Awareness</h4>
+<p>In Redux, if you generate a reducer that mutates state when hearing the verb <code>SET</code>, and then use <code>combineReducers()</code> to connect multiple copies of this reducer into a state tree, what happens when you dispatch an action of type <code>SET</code>?</p>
+<p>Right, <em>all</em> of the nodes where you attached that reducer will change their state! This is usually not what you want, and it exposes a fundamental problem with basic Redux composition: <em>plain reducers are neither isolated nor reusable!</em></p>
+<p>In redux-components, we address this issue by making components <strong>path-aware</strong>. Every component instance, after it is mounted, has a <code>this.path</code> property containing an array path from the root of the store to the state of this mounted component. Using this information, we can scope component instances to their position in the tree, as follows:</p>
+<h4>Scoped Verbs</h4>
+<p>When you declare a static <code>verbs</code> field on your component class (which must be an array of plain strings) you are telling redux-components to generate a list of <strong>scoped verbs</strong> on each instance of your component when it mounts. The scoped verbs are transformed at mount time into plain strings on the instance. (of the form <code>this[verb] = `${this.path}:${verb}`</code>)</p>
+<p>The payoff is that by using <em>scoped</em> verbs, when you have a bunch of instances of the same component with the same reducer all attached to the same state tree, you can target any <em>single</em> instance with an action <em>by using a scoped verb as the action type!</em> Only the reducer of the specific component that recognizes the scoped verb will respond.</p>
+<p>This requires some changes at the point where verbs are created (actions) and the point where verbs are received (reducers): instead of specifying a plain string as you would in Redux, instead you specify <code>this.[verb]</code>, e.g. <code>this.SET</code> for the scoped verb <code>SET</code>. Then your action dispatchers will dispatch, and your reducers will reduce over, scoped verbs rather than fixed strings.</p>
+<p>And now you should understand why, in our <code>SimpleComponent</code>, our reducer and action dispatcher used <code>this.SET</code> as the action type, instead of just <code>&quot;SET&quot;</code>.</p>
+<blockquote>
+<p>Most of the time you will want the behavior of scoped verbs, but sometimes you will want the default behavior where multiple components respond identically to the same verb. No problem! Just omit declaring a verb altogether and use plain strings in your reducer and actions. This falls back cleanly onto default Redux behavior.</p>
+</blockquote>
+<h4>Scoped Selectors</h4>
+<p>In addition to scoping the way we update our store, we’ll also need to scope the way we retrieve from the store. That’s where <strong>scoped selectors</strong> come in. Rather than operating on the state of the store as a whole, a scoped selector operates only on the state of the node where it is mounted.</p>
+<p>This means that each instance of <code>SimpleComponent</code> mounted on our example state tree will see only its local state: <code>tree.deep.deeper.d.get()</code> will return the value at <code>store.getState().deep.deeper.d</code>.</p>
+<h2>Higher-Order Components</h2>
+<p>Trees are one way to compose pieces of functionality into larger wholes. Another technique is by way of <strong>higher-order components</strong>. A higher-order component is a function that takes a Redux component class, transforms it by adding some functionality, and returns a new Redux component class.</p>
+<p>redux-components ships with just one higher-order component, <code>withSubtree()</code>. (In fact, all the tree patterns in redux-components are implemented using this HOC!)</p>
+<h3>withSubtree</h3>
+<p>Suppose you want to write a type of component that has some functionality of its own, but also has child components. That’s where the <strong>withSubtree</strong> HOC comes in:</p>
+<pre><code class="language-javascript"><span class="hljs-keyword">import</span> {
+  ReduxComponent, withSubtree, mountRootComponent
+} <span class="hljs-keyword">from</span> <span class="hljs-string">'redux-components'</span>
+<span class="hljs-keyword">import</span> { SimpleComponent } <span class="hljs-keyword">from</span> SimpleComponent
+<span class="hljs-keyword">import</span> { createStore } <span class="hljs-keyword">from</span> <span class="hljs-string">'redux'</span>
+
+<span class="hljs-comment">// Create a parent SimpleComponent class that embeds a child SimpleComponent</span>
+<span class="hljs-comment">// at `this.child`.</span>
+<span class="hljs-keyword">const</span> ParentComponent = withSubtree( <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+  <span class="hljs-attr">child</span>: SimpleComponent
+})(SimpleComponent)
+
+<span class="hljs-keyword">var</span> parent = <span class="hljs-keyword">new</span> ParentComponent()
+<span class="hljs-keyword">var</span> store = createStore( <span class="hljs-function"><span class="hljs-params">x</span> =&gt;</span> x )
+mountRootComponent(store, parent)
+
+<span class="hljs-comment">// These will all dispatch the appropriate actions, scope properly, etc.</span>
+parent.set(<span class="hljs-string">'hello world'</span>)
+parent.child.set(<span class="hljs-string">'goodbye world'</span>)
+assert(parent.get() === <span class="hljs-string">'hello world'</span>)
+assert(parent.child.get() === <span class="hljs-string">'goodbye world'</span>)
+</code></pre>
+<p>This will create a new class, related to <code>SimpleComponent</code>, but with an instance of <code>ChildComponent</code> automatically mounted at <code>this.child</code> when the <code>ParentComponent</code> mounts.</p>
+<p>Specifically, here’s how <code>withSubtree</code> works:</p>
+<ul>
+<li>
+<p><code>withSubtree(getSubtree)</code> takes a function called <code>getSubtree</code>. The <code>getSubtree()</code> function takes no arguments and must return an object-type component descriptor (see <code>createComponent</code>). <code>withSubtree</code> then returns a higher-order component, which takes a base class and creates a new class.</p>
+</li>
+<li>
+<p>During <code>componentWillMount</code>, the new class will call the <code>getSubtree()</code> function. It will create the subtree using the descriptor just as <code>createComponent()</code> does.</p>
+</li>
+<li>
+<p>The reducer for the new class will first call the reducers for the subtree and combine them. It will then call the reducer method of the base class with the combined and merged state. Your reducer will therefore see the result of all the child reducers in the incoming state.</p>
+</li>
+</ul>
+<blockquote>
+<p>Before, I mentioned that all the subtree functionality of <code>createComponent</code> is in fact implemented using <code>withSubtree</code>. Here’s how it works:</p>
+<pre><code class="language-javascript"></code></pre>
+</blockquote>
+<p>function createTreeComponent(shape) {
+var clazz = withSubtree(() =&gt; shape)(ReduxComponent)
+return new clazz()
+}</p>
+<pre><code>
+<span class="hljs-comment">## State Changes</span>
+
+We've talked about how <span class="hljs-keyword">to</span> design components, access their <span class="hljs-keyword">state</span>, mutate them by sending actions, and compose them into larger wholes. But what about interaction? How do you look <span class="hljs-keyword">for</span> and respond <span class="hljs-keyword">to</span> <span class="hljs-keyword">state</span> changes?
+
+In redux-components, this is achieved using [TC39 Observables](https://github.com/tc39/proposal-observable) <span class="hljs-keyword">in</span> combination with the selector pattern we've already described.
+
+<span class="hljs-comment">### Observable Selectors</span>
+
+Any selector <span class="hljs-keyword">on</span> <span class="hljs-literal">any</span> Redux component can be turned into an `Observable` by adding `{isObservable: true}` <span class="hljs-keyword">to</span> the decorator options <span class="hljs-keyword">in</span> the class. In the `SimpleComponent` example:
+
+```javascript
+@selector({isObservable: true})
+get(<span class="hljs-keyword">state</span>) { return <span class="hljs-keyword">state</span> }
+</code></pre>
+<p>This causes every instance of <code>SimpleComponent</code> to attach <code>Observable</code> interop points to the <code>get()</code> selector. You can use it like so:</p>
+<pre><code class="language-javascript"><span class="hljs-keyword">import</span> { createStore } <span class="hljs-keyword">from</span> <span class="hljs-string">'redux'</span>
+<span class="hljs-keyword">import</span> { mountRootComponent } <span class="hljs-keyword">from</span> <span class="hljs-string">'redux-components'</span>
+<span class="hljs-keyword">import</span> { SimpleComponent } <span class="hljs-keyword">from</span> <span class="hljs-string">'SimpleComponent'</span>
+<span class="hljs-comment">// You can use any TC39-compatible Observable library... zen, rx5, etc.</span>
+<span class="hljs-keyword">import</span> Observable <span class="hljs-keyword">from</span> <span class="hljs-string">'zen-observable'</span>
+
+<span class="hljs-keyword">var</span> simpleComponentInstance = <span class="hljs-keyword">new</span> SimpleComponent()
+<span class="hljs-keyword">var</span> store = createStore( <span class="hljs-function"><span class="hljs-params">x</span> =&gt;</span> x )
+mountRootComponent(store, simpleComponentInstance)
+
+simpleComponentInstance.set(<span class="hljs-string">'hello world'</span>)
+
+<span class="hljs-comment">// A selector with `isObservable: true` exports an Observable symbol, so it</span>
+<span class="hljs-comment">// can be used with the `Observable.from` method of your preferred</span>
+<span class="hljs-comment">// TC39-compliant implementation.</span>
+<span class="hljs-keyword">var</span> currentState = Observable.from(simpleComponentInstance.get)
+
+<span class="hljs-comment">// The Observable produced by redux-components emits a value every time its</span>
+<span class="hljs-comment">// associated selector changes value. It caches the current value of the</span>
+<span class="hljs-comment">// selector and feeds it to each new subscriber. It never stops emitting.</span>
+<span class="hljs-comment">// It will emit an error only when the associated selector throws.</span>
+
+<span class="hljs-comment">// This will immediately print 'hello world', because new subscribers always</span>
+<span class="hljs-comment">// get called with the current value. (BehaviorSubject in rxjs terminology)</span>
+<span class="hljs-keyword">var</span> subscription = currentState.subscribe({
+  <span class="hljs-attr">next</span>: <span class="hljs-function">(<span class="hljs-params">nextState</span>) =&gt;</span> <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"I just saw a state change:"</span>, nextState)
+})
+
+<span class="hljs-comment">// This will cause a state change, and your observer will then print</span>
+<span class="hljs-comment">// 'goodbye world'</span>
+simpleComponentInstance.set(<span class="hljs-string">'goodbye world'</span>)
+</code></pre>
+<ul>
+<li>
+<p>The <code>Observable</code> produced by an observable selector is a so-called “hot observable” – it continuously emits values throughout the life of your component. It will never emit <code>complete</code> and it will only emit <code>error</code> if the selector throws an error.</p>
+</li>
+<li>
+<p>The <code>Observable</code>s are also <code>BehaviorSubject</code>s (in RxJS terminology) in that they store their current value and will always emit their current value to a new subscriber, even if the component doesn’t change state.</p>
+</li>
+<li>
+<p>redux-components doesn’t depend on or import any particular observable library; we write to the TC39 API and you can choose your preferred implementation thereof. redux-components is <em>not compatible</em> with pre-TC39 legacy observable libraries. You will have to shim them to TC39 if you want compatibility.</p>
+</li>
+</ul>
+<h2>Patterns</h2>
+<blockquote>
+<p>This whole section is a WIP. Bear with us.</p>
+</blockquote>
+<h3>Singleton Components</h3>
+<p>Create component instances as singletons. Mount all your singletons to a root store with createComponent. Reference the singletons in your app code.</p>
+<h2>Antipatterns</h2>
+<blockquote>
+<p>Coming soon.</p>
+</blockquote>
+<h2>FAQ</h2>
+<blockquote>
+<p><strong>Q:</strong> I can’t (or don’t want to) use future JavaScript syntax like decorators and member variables. Can I still use redux-components?</p>
+</blockquote>
+<p><strong>A:</strong> Yes! We provide shims to apply decorators using normal syntax. It’s less pretty, but it works just the same. Here’s the <code>SimpleComponent</code> example, rewritten using only ES2015 standard syntax:</p>
+<pre><code class="language-javascript"><span class="hljs-comment">// Import the `decorate` shim...</span>
+<span class="hljs-keyword">import</span> { ReduxComponent, action, selector, decorate } <span class="hljs-keyword">from</span> <span class="hljs-string">'redux-components'</span>
+
+<span class="hljs-comment">// Write an ES2015 class without decorators or member variable syntax...</span>
+<span class="hljs-keyword">export</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SimpleComponent</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">ReduxComponent</span> </span>{
+  reducer(state = <span class="hljs-literal">null</span>, action) {
+    <span class="hljs-keyword">switch</span>(action.type) {
+      <span class="hljs-keyword">case</span> <span class="hljs-keyword">this</span>.SET:
+        <span class="hljs-keyword">return</span> (action.payload === <span class="hljs-literal">undefined</span>) ? <span class="hljs-literal">null</span> : action.payload
+
+      <span class="hljs-keyword">default</span>:
+        <span class="hljs-keyword">return</span> state
+    }
+  }
+
+  set(value) {
+    <span class="hljs-keyword">return</span> { <span class="hljs-attr">type</span>: <span class="hljs-keyword">this</span>.SET, <span class="hljs-attr">payload</span>: value }
+  }
+
+  get(state) {
+    <span class="hljs-keyword">return</span> state
+  }
+}
+
+<span class="hljs-comment">// Instead of static verbs = ['SET'] in the class body (ES2017 member syntax)</span>
+<span class="hljs-comment">// you can attach static values outside the class body, like so:</span>
+SimpleComponent.verbs = [<span class="hljs-string">'SET'</span>]
+
+<span class="hljs-comment">// By importing the `decorate` shim from redux-components, you can avoid</span>
+<span class="hljs-comment">// decorator syntax and apply the decorators imperatively:</span>
+decorate(SimpleComponent, {
+  <span class="hljs-attr">set</span>: action({<span class="hljs-attr">isDispatcher</span>: <span class="hljs-literal">true</span>})
+  get: selector({<span class="hljs-attr">isObservable</span>: <span class="hljs-literal">true</span>})
+})
+</code></pre>
+</div></div><span style="display:block;clear:both;" data-reactid="18"> </span></div></div></div><script src="/bundle.js?t=1490116682459"></script></body></html>
