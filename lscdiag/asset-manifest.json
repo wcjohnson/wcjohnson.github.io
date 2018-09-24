@@ -1,7 +1,9 @@
 {
-  "main.css": "static/css/main.8a6965dd.css",
-  "main.css.map": "static/css/main.8a6965dd.css.map",
-  "main.js": "static/js/main.c3e6201a.js",
-  "main.js.map": "static/js/main.c3e6201a.js.map",
-  "static/media/lsclogo.svg": "static/media/lsclogo.3c3fa7ce.svg"
+  "main.css": "/lscdiag/static/css/main.dee03c09.chunk.css",
+  "main.js": "/lscdiag/static/js/main.afcd6c09.chunk.js",
+  "static/css/1.ed44dcdf.chunk.css": "/lscdiag/static/css/1.ed44dcdf.chunk.css",
+  "static/js/1.2d649e5a.chunk.js": "/lscdiag/static/js/1.2d649e5a.chunk.js",
+  "runtime~main.js": "/lscdiag/static/js/runtime~main.97402ba5.js",
+  "static/media/lsclogo.svg": "/lscdiag/static/media/lsclogo.3c3fa7ce.svg",
+  "index.html": "/lscdiag/index.html"
 }
