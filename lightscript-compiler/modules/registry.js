@@ -24,6 +24,60 @@ function getToolImplementation(toolApi) {
           url: 'https://wcjohnson.github.io/lightscript-compiler/modules/compiler/0.5.9.min.js'
         }
       },
+      // 1.1
+      {
+        name: '1.1.0',
+        babel: babel6,
+        lscPlugin: {
+          type: 'remote',
+          url: 'https://wcjohnson.github.io/lightscript-compiler/modules/compiler/1.1.0.min.js'
+        }
+      },
+      // 2.0
+      {
+        name: '2.0.1',
+        babel: babel6,
+        lscPlugin: {
+          type: 'remote',
+          url: 'https://wcjohnson.github.io/lightscript-compiler/modules/compiler/2.0.1.min.js'
+        }
+      },
+      // 2.1
+      {
+        name: '2.1.1',
+        babel: babel6,
+        lscPlugin: {
+          type: 'remote',
+          url: 'https://wcjohnson.github.io/lightscript-compiler/modules/compiler/2.1.1.min.js'
+        }
+      },
+      // 2.2
+      {
+        name: '2.2.1',
+        babel: babel6,
+        lscPlugin: {
+          type: 'remote',
+          url: 'https://wcjohnson.github.io/lightscript-compiler/modules/compiler/2.2.1.min.js'
+        }
+      },
+      // 2.3
+      {
+        name: '2.3.2',
+        babel: babel6,
+        lscPlugin: {
+          type: 'remote',
+          url: 'https://wcjohnson.github.io/lightscript-compiler/modules/compiler/2.3.2.min.js'
+        }
+      },
+      // 3.0
+      {
+        name: '3.0.0',
+        babel: babel6,
+        lscPlugin: {
+          type: 'remote',
+          url: 'https://wcjohnson.github.io/lightscript-compiler/modules/compiler/3.0.0.min.js'
+        }
+      },
       // 3.1
       {
         name: '3.1.1',
