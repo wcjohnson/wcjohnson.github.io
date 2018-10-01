@@ -1,1 +1,40 @@
-"use strict";function getToolImplementation(e){return e.lscToolchains({versions:[{name:"4.0.0-alpha.12",babel:{type:"remote",url:"https://wcjohnson.github.io/lightscript-compiler/modules/platform/babel-7.1.0.min.js"},lscPlugin:{type:"remote",url:"https://wcjohnson.github.io/lightscript-compiler/modules/compiler/4.0.0-alpha.12.min.js"}}]})}Object.defineProperty(exports,"__esModule",{value:!0}),exports.getToolImplementation=getToolImplementation;
+'use strict';
+
+Object.defineProperty(exports, '__esModule', { value: true });
+
+function getToolImplementation(toolApi) {
+  var babel7 = {
+    type: 'remote',
+    url: 'https://wcjohnson.github.io/lightscript-compiler/modules/platform/babel-7.1.0.min.js'
+  };
+
+  var babel6 = {
+    type: 'remote',
+    url: 'https://wcjohnson.github.io/lightscript-compiler/modules/platform/babel-6.26.0.min.js'
+  }
+
+  return toolApi.lscToolchains({
+    versions: [
+      // 4.0.0-alpha.12
+      {
+        name: '3.1.1',
+        babel: babel6,
+        lscPlugin: {
+          type: 'remote',
+          url: 'https://wcjohnson.github.io/lightscript-compiler/modules/compiler/3.1.1.min.js'
+        }
+      },
+      // 4.0.0-alpha.12
+      {
+        name: '4.0.0-alpha.12',
+        babel: babel7,
+        lscPlugin: {
+          type: 'remote',
+          url: 'https://wcjohnson.github.io/lightscript-compiler/modules/compiler/4.0.0-alpha.12.min.js'
+        }
+      }
+    ]
+  });
+}
+
+exports.getToolImplementation = getToolImplementation;
