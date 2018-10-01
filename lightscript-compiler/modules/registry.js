@@ -40,14 +40,15 @@ function getToolImplementation(toolApi) {
         lscPlugin: {
           type: 'remote',
           url: 'https://wcjohnson.github.io/lightscript-compiler/modules/compiler/4.0.0-alpha.12.min.js'
-        },
-        {
-          name: '4.0.0-alpha.13',
-          babel: babel7,
-          lscPlugin: {
-            type: 'remote',
-            url: 'https://wcjohnson.github.io/lightscript-compiler/modules/compiler/4.0.0-alpha.13.min.js'
-          }
+        }
+      },
+      {
+        name: '4.0.0-alpha.13',
+        babel: babel7,
+        lscPlugin: {
+          type: 'remote',
+          url: 'https://wcjohnson.github.io/lightscript-compiler/modules/compiler/4.0.0-alpha.13.min.js'
+        }
       }
     ]
   });
