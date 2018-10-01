@@ -15,7 +15,16 @@ function getToolImplementation(toolApi) {
 
   return toolApi.lscToolchains({
     versions: [
-      // 4.0.0-alpha.12
+      // 0.5
+      {
+        name: '0.5.9',
+        babel: babel6,
+        lscPlugin: {
+          type: 'remote',
+          url: 'https://wcjohnson.github.io/lightscript-compiler/modules/compiler/0.5.9.min.js'
+        }
+      },
+      // 3.1
       {
         name: '3.1.1',
         babel: babel6,
@@ -24,7 +33,7 @@ function getToolImplementation(toolApi) {
           url: 'https://wcjohnson.github.io/lightscript-compiler/modules/compiler/3.1.1.min.js'
         }
       },
-      // 4.0.0-alpha.12
+      // 4.0
       {
         name: '4.0.0-alpha.12',
         babel: babel7,
