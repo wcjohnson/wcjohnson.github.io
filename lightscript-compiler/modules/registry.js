@@ -5,12 +5,12 @@ Object.defineProperty(exports, '__esModule', { value: true });
 function getToolImplementation(toolApi) {
   var babel7 = {
     type: 'remote',
-    url: 'https://wcjohnson.github.io/lightscript-compiler/modules/platform/babel-7.1.0.min.js'
+    url: 'https://wcjohnson.github.io/lightscript-compiler/modules/platform/babel-7.min.js'
   };
 
   var babel6 = {
     type: 'remote',
-    url: 'https://wcjohnson.github.io/lightscript-compiler/modules/platform/babel-6.26.0.min.js'
+    url: 'https://wcjohnson.github.io/lightscript-compiler/modules/platform/babel-6.min.js'
   }
 
   return toolApi.lscToolchains({
