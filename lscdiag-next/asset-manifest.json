@@ -1,7 +1,7 @@
 {
   "main.css": "/lscdiag-next/static/css/main.7cdd03bf.chunk.css",
-  "main.js": "/lscdiag-next/static/js/main.22790ea8.chunk.js",
-  "main.js.map": "/lscdiag-next/static/js/main.22790ea8.chunk.js.map",
+  "main.js": "/lscdiag-next/static/js/main.767d19b0.chunk.js",
+  "main.js.map": "/lscdiag-next/static/js/main.767d19b0.chunk.js.map",
   "static/js/1.48e3a623.chunk.js": "/lscdiag-next/static/js/1.48e3a623.chunk.js",
   "static/js/1.48e3a623.chunk.js.map": "/lscdiag-next/static/js/1.48e3a623.chunk.js.map",
   "runtime~main.js": "/lscdiag-next/static/js/runtime~main.85062d0b.js",
@@ -10,6 +10,6 @@
   "static/media/lsclogo.svg": "/lscdiag-next/static/media/lsclogo.3c3fa7ce.svg",
   "static/css/main.7cdd03bf.chunk.css.map": "/lscdiag-next/static/css/main.7cdd03bf.chunk.css.map",
   "index.html": "/lscdiag-next/index.html",
-  "precache-manifest.8d86f6d71e8195fea9e1bac725583438.js": "/lscdiag-next/precache-manifest.8d86f6d71e8195fea9e1bac725583438.js",
+  "precache-manifest.2e34d332f5e81c8697f0f285ac3daba8.js": "/lscdiag-next/precache-manifest.2e34d332f5e81c8697f0f285ac3daba8.js",
   "service-worker.js": "/lscdiag-next/service-worker.js"
 }
