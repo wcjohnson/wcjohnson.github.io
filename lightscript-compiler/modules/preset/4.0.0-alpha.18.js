@@ -33163,7 +33163,9 @@ var browser_7 = browser.colors;
 
 function isatty() { return false; }
 
-var _fixed_import = {};
+var _fixed_import = {
+	isatty: isatty
+};
 
 var _fixed_import$1 = /*#__PURE__*/Object.freeze({
 	isatty: isatty,
