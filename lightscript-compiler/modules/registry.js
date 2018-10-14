@@ -119,6 +119,14 @@ function getToolImplementation(toolApi) {
           type: 'remote',
           url: 'https://wcjohnson.github.io/lightscript-compiler/modules/compiler/4.0.0-alpha.22.min.js'
         }
+      },
+      {
+        name: '4.0.0-alpha.23',
+        babel: babel7,
+        lscPlugin: {
+          type: 'remote',
+          url: 'https://unpkg.com/@lightscript/webpacked@4.0.0-alpha.23/pluginToolCjs.js'
+        }
       }
     ]
   });
