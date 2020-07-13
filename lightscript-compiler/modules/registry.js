@@ -8,6 +8,11 @@ function getToolImplementation(toolApi) {
     url: 'https://wcjohnson.github.io/lightscript-compiler/modules/platform/babel-7.min.js'
   };
 
+  var babel7_10_4 = {
+    type: 'remote',
+    url: 'https://wcjohnson.github.io/lightscript-compiler/modules/platform/babel-7.10.4.min.js'
+  };
+
   var babel6 = {
     type: 'remote',
     url: 'https://wcjohnson.github.io/lightscript-compiler/modules/platform/babel-6.min.js'
@@ -127,7 +132,15 @@ function getToolImplementation(toolApi) {
           type: 'remote',
           url: 'https://unpkg.com/@lightscript/webpacked@4.0.0-alpha.23/pluginToolCjs.js'
         }
-      }
+      },
+      {
+        name: '4.0.0-alpha.25',
+        babel: babel7_10_4,
+        lscPlugin: {
+          type: 'remote',
+          url: 'https://unpkg.com/@lightscript/webpacked@4.0.0-alpha.25/pluginToolCjs.js'
+        }
+      },
     ]
   });
 }
