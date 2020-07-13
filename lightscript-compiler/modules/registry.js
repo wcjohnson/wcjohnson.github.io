@@ -134,11 +134,11 @@ function getToolImplementation(toolApi) {
         }
       },
       {
-        name: '4.0.0-alpha.25',
+        name: '4.0.0-alpha.26',
         babel: babel7_10_4,
         lscPlugin: {
           type: 'remote',
-          url: 'https://unpkg.com/@lightscript/webpacked@4.0.0-alpha.25/pluginToolCjs.js'
+          url: 'https://unpkg.com/@lightscript/webpacked@4.0.0-alpha.26/pluginToolCjs.js'
         }
       },
     ]
