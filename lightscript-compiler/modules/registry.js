@@ -149,6 +149,14 @@ function getToolImplementation(toolApi) {
           url: 'https://unpkg.com/@lightscript/webpacked@4.0.0-alpha.29/pluginToolCjs.js'
         }
       },
+      {
+        name: '4.0.0-alpha.30',
+        babel: babel7_10_4,
+        lscPlugin: {
+          type: 'remote',
+          url: 'https://unpkg.com/@lightscript/webpacked@4.0.0-alpha.30/pluginToolCjs.js'
+        }
+      },
     ]
   });
 }
